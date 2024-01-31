@@ -1,0 +1,178 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+
+    body {
+        color: white;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo {
+        position: relative;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: default;
+        opacity: 0;
+        animation: slideRight 1s ease forwards;
+    }
+
+    .navbar a {
+        display: inline-block;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+        transition: .3s;
+        animation: sliderTop .5s ease forwards;
+    }
+
+    .navbar a:hover {
+        color: white;
+    }
+
+    .home {
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+        height: 100vh;
+        color: black;
+        background: url(https://images.pexels.com/photos/7629493/pexels-photo-7629493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 700px 10%;
+    }
+
+    .home-content {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    .home-content h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: whitesmoke;
+    }
+
+    .home-content h4 {
+        font-size: 56px;
+        font-weight: 700;
+        margin: -3px 0;
+    }
+
+
+    .home-content h4:nth-of-type(2){
+        margin-bottom: 30px;
+    }
+    .home-content h4 span{
+
+    color: #0ef;
+        
+    }
+
+
+    .home-sci {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .home-sci a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        margin: 0 15px;
+    }
+
+    .home-sci a :hover{
+        background: #0ef;
+        color: black;
+        box-shadow:  0 0 20px #0ef;
+    }
+
+    .home-sci i {
+        border: 2px solid;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .btn-box{
+        display: inline-block;
+        padding: 12px 28px;
+        background: #0ef;
+        border-radius: 40px;
+        font-size: 16px;
+        color: black;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .btn-box:hover{
+        box-shadow:  0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0  200px cyan
+
+
+    }
+
+
+
+    .navbar a.active {
+        color: #ff0000; /* Change this to your desired active link color */
+        /* Add any other styles you want for the active link */
+    }
+    
+
+    @keyframes slideRight {
+
+        0%{
+            transform: translateX(-100px);
+            opacity: 0;
+
+        }
+
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+            
+        }
+    }
+    
+    @keyframes sliderTop {
+
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+
+        }
+
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+            
+        }
+    }
+    
